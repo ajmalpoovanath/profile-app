@@ -24,7 +24,82 @@ struct ContentView: View {
                     .frame(width: 350, height: 600)
                 
                 //Card content
-                ZStack{
+                VStack{
+                    
+                    //Profile picture
+                    Image("potrait-of-ajmal")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 150.0, height: 150.0)
+                        .clipShape(.circle)
+                    
+                    //Name
+                    Text("Ajmal Poovanath")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.white)
+                        .padding(.top, 10)
+                    
+                    //Location
+                    Text("Kerala, India")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.yellow)
+                        .padding(.top, 5.0)
+                    
+                    //Title
+                    Text("\"iOS Developer\"")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.white)
+                        .padding(.top, 5.0)
+                    
+                    //Buttons
+                    
+                    //Github button
+                    Button(action:{
+                        print("Github button")
+                    }){
+                        Text("GitHub")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .padding(.horizontal, 120.0)
+                            .padding(.vertical, 20.0)
+                            .background(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255))
+                            .foregroundColor(Color.white)
+                            .cornerRadius(10)
+                            
+                    }
+                    
+                    //LinkedIn
+                    Button(action:{
+                        print("LinkedIn button")
+                    }){
+                        Text("LinkedIn")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .padding(.horizontal, 115.0)
+                            .padding(.vertical, 20.0)
+                            .background(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255))
+                            .foregroundColor(Color.white)
+                            .cornerRadius(10)
+                            
+                    }
+                    
+                    //Instagram
+                    Button(action:{
+                        print("Instagram button")
+                    }){
+                        Text("Instagram")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .padding(.horizontal, 109.0)
+                            .padding(.vertical, 20.0)
+                            .background(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255))
+                            .foregroundColor(Color.white)
+                            .cornerRadius(10)
+                            
+                    }
                     
                 }
             }
