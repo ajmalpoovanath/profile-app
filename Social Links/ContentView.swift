@@ -55,51 +55,57 @@ struct ContentView: View {
                         .padding(.top, 5.0)
                     
                     //Buttons
-                    
-                    //Github button
-                    Button(action:{
-                        print("Github button")
-                    }){
-                        Text("GitHub")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                            .padding(.horizontal, 120.0)
-                            .padding(.vertical, 20.0)
-                            .background(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255))
-                            .foregroundColor(Color.white)
-                            .cornerRadius(10)
-                            
+                    VStack{
+                        //Github button
+                        Button(action:{
+                            print("Github button")
+                        }){
+                            Text("GitHub")
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                                .padding(.horizontal, 120.0)
+                                .padding(.vertical, 20.0)
+                                .background(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255))
+                                .foregroundColor(Color.white)
+                                .cornerRadius(10)
+                                
+                        }
+                        
+                        //LinkedIn
+                        Button(action:{
+                            print("LinkedIn button")
+                        }){
+                            Text("LinkedIn")
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                                .padding(.horizontal, 115.0)
+                                .padding(.vertical, 20.0)
+                                .background(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255))
+                                .foregroundColor(Color.white)
+                                .cornerRadius(10)
+                                
+                        }
+                        .padding(.top, 10)
+                        
+                        //Instagram
+                        Button(action:{
+                            print("Instagram button")
+                        }){
+                            Text("Instagram")
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                                .padding(.horizontal, 109.0)
+                                .padding(.vertical, 20.0)
+                                .background(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255))
+                                .foregroundColor(Color.white)
+                                .cornerRadius(10)
+                                
+                        }
+                        .padding(.top, 10)
                     }
+                    .padding(.top, 5)
                     
-                    //LinkedIn
-                    Button(action:{
-                        print("LinkedIn button")
-                    }){
-                        Text("LinkedIn")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                            .padding(.horizontal, 115.0)
-                            .padding(.vertical, 20.0)
-                            .background(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255))
-                            .foregroundColor(Color.white)
-                            .cornerRadius(10)
-                            
-                    }
                     
-                    //Instagram
-                    Button(action:{
-                        print("Instagram button")
-                    }){
-                        Text("Instagram")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                            .padding(.horizontal, 109.0)
-                            .padding(.vertical, 20.0)
-                            .background(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255))
-                            .foregroundColor(Color.white)
-                            .cornerRadius(10)
-                            
-                    }
                     
                 }
             }
