@@ -57,23 +57,26 @@ struct ContentView: View {
                     //Buttons
                     VStack{
                         //Github button
-                        Button(action:{
-                            print("Github button")
-                        }){
-                            Text("GitHub")
-                                .font(.title3)
-                                .fontWeight(.semibold)
-                                .padding(.horizontal, 120.0)
-                                .padding(.vertical, 20.0)
-                                .background(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255))
-                                .foregroundColor(Color.white)
-                                .cornerRadius(10)
-                                
-                        }
+                        Button(action: {
+                                        if let url = URL(string: "https://github.com/ajmalpoovanath") {
+                                            UIApplication.shared.open(url)
+                                        }
+                                    }) {
+                                        Text("GitHub")
+                                            .font(.title3)
+                                            .fontWeight(.semibold)
+                                            .padding(.horizontal, 120.0)
+                                            .padding(.vertical, 20.0)
+                                            .background(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255))
+                                            .foregroundColor(Color.white)
+                                            .cornerRadius(10)
+                                    }
                         
                         //LinkedIn
                         Button(action:{
-                            print("LinkedIn button")
+                            if let url = URL(string: "https://linkedin.com/in/ajmalpoovanath") {
+                                UIApplication.shared.open(url)
+                            }
                         }){
                             Text("LinkedIn")
                                 .font(.title3)
@@ -89,7 +92,9 @@ struct ContentView: View {
                         
                         //Instagram
                         Button(action:{
-                            print("Instagram button")
+                            if let url = URL(string: "https://www.instagram.com/_.ajmal1/") {
+                                UIApplication.shared.open(url)
+                            }
                         }){
                             Text("Instagram")
                                 .font(.title3)
@@ -103,7 +108,8 @@ struct ContentView: View {
                         }
                         .padding(.top, 10)
                     }
-                    .padding(.top, 5)
+                    .padding(.top,5)
+                    
                     
                     
                     
