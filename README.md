@@ -1,4 +1,4 @@
-# Profile App
+<h1 align = "center">Profile App</h1>
 
 
 
