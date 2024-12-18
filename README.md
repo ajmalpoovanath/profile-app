@@ -2,7 +2,7 @@
 
 
 
-# Screenshot
+## Screenshot
 
 <img src="images/home-screen.png" alt="Alt Text" width="auto" height="600">
 
