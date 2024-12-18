@@ -17,7 +17,7 @@ Since I am not currently enrolled in the Apple Developer Program, I am unable to
 
    ```sh
    cd profile-app
-   open open Social\ Links.xcodeproj
+   open Social\ Links.xcodeproj
 
    ```
 
